@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+
+:root {
+  font-family: "Abril Fatface";
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Abril Fatface";
+}
+#navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navLogo {
+  width: 10%;
+}
+#navName {
+  font-family: "Pacifico", cursive;
+  font-size: 200%;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+#hero img {
+  display: flex;
+  width: 50%;
+  height: auto;
+}
+
+#heroTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+#heroTitle h2 {
+  justify-items: flex-end;
+}
