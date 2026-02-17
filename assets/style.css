@@ -32,15 +32,35 @@ body {
 
 #hero img {
   display: flex;
-  width: 50%;
+  width: 100%;
   height: auto;
+  position: relative;
 }
 
 #heroTitle {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  color: antiquewhite;
+  font-size: xx-large;
+  padding-top: 6%;
+  padding-left: 0.75em;
+  width: 100%;
 }
 
 #heroTitle h2 {
-  justify-items: flex-end;
+  display: flex;
+  width: 100%;
+  padding-top: 18%;
+  padding-right: 0.75em;
+  justify-content: flex-end;
+}
+
+#heroBlurb {
+  display: flex;
+  position: absolute;
+  color: antiquewhite;
+  width: 75%;
+  padding-top: 42%;
+  padding-left: 30%;
 }
