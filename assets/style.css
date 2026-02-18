@@ -42,7 +42,7 @@ body {
   flex-direction: column;
   position: absolute;
   color: antiquewhite;
-  font-size: xx-large;
+  font-size: 300%;
   padding-top: 6%;
   padding-left: 0.75em;
   width: 100%;
@@ -63,4 +63,15 @@ body {
   width: 75%;
   padding-top: 42%;
   padding-left: 30%;
+  font-size: 110%;
+}
+#heroButtons {
+  width: 100%;
+}
+
+#grwmButton {
+  display: flex;
+  position: absolute;
+  background-color: transparent;
+  justify-content: center;
 }
