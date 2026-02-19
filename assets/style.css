@@ -145,6 +145,11 @@ p {
   background-color: black;
   color: antiquewhite;
 }
+/* HOW IT WORKS STYLING */
+#howItWorks {
+  text-align: center;
+  margin: 1rem;
+}
 /* FOOTER STYLING */
 #footer {
   display: flex;
