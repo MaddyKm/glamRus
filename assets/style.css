@@ -1,6 +1,8 @@
+/* IMPORTED FONTS */
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
 
+/* BASE STYLING */
 :root {
   font-family: "Abril Fatface";
   margin: 0px;
@@ -10,6 +12,19 @@
 body {
   font-family: "Abril Fatface";
 }
+.titleFont {
+  font-family: "Pacifico", cursive;
+}
+h3 {
+  font-size: clamp(1.25rem, 5vw, 5rem);
+}
+h4 {
+  font-size: clamp(1rem, 3.5vw, 3rem);
+}
+p {
+  font-size: clamp(0.75rem, 2vw, 2.5rem);
+}
+/* NAV STYLING */
 #navBar {
   display: flex;
   justify-content: center;
@@ -20,18 +35,17 @@ body {
   width: 10%;
 }
 #navName {
-  font-family: "Pacifico", cursive;
   font-size: 200%;
 }
 
-/* HERO SECTION */
+/* HERO STYLING */
 #hero {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
   height: 80vh;
-  background-image: url("heroImage.png");
+  background-image: url("./media/heroImage.png");
   background-size: cover;
   background-position: center;
 }
@@ -40,7 +54,6 @@ body {
   top: 5%;
   padding-left: 2%;
   color: antiquewhite;
-  font-size: clamp(0.5rem, 1000vw, 100rem); /* scales with screen */
   width: 100%;
 }
 #heroTitle h1 {
@@ -58,7 +71,6 @@ body {
   margin: 0 auto;
   text-align: center;
   color: antiquewhite;
-  font-size: clamp(0.45rem, 2vw, 2.5rem);
 }
 
 #heroButtons {
@@ -68,7 +80,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.btn {
+.herobtn {
   display: flex;
   background-color: transparent;
   margin: 0.2em;
@@ -78,11 +90,62 @@ body {
   padding: clamp(0.4rem, 1vw, 0.8rem) clamp(0.8rem, 2vw, 1.5rem);
 }
 
-.btn:hover {
+.herobtn:hover {
   background-color: antiquewhite;
 }
+/* ABOUT STYLING */
+#aboutPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: antiquewhite;
+}
+#abtBlurbOne {
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+#abtBlurbTwo {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
 
-/* FOOTER SECTION */
+#abtCards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: clamp(18rem, 40vw, 50rem);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.4);
+}
+.card-body {
+  padding-top: 0;
+}
+.list-group-item {
+  padding: 0;
+  font-size: clamp(0.75rem, 2vw, 2.5rem);
+  color: rgb(78, 35, 86);
+}
+.list-group {
+  margin-bottom: 0.75rem;
+}
+.cardBtn {
+  color: black;
+  background-color: antiquewhite;
+  border: 0;
+  font-size: clamp(0.75rem, 2vw, 4rem);
+  padding: clamp(0.4rem, 1vw, 0.8rem) clamp(0.8rem, 2vw, 1.5rem);
+}
+.cardBtn:hover {
+  background-color: black;
+  color: antiquewhite;
+}
+/* FOOTER STYLING */
 #footer {
   display: flex;
   background-color: antiquewhite;
@@ -99,7 +162,6 @@ body {
 }
 
 #footerName {
-  font-family: "Pacifico", cursive;
   font-size: larger;
   margin: 0;
 }
