@@ -25,19 +25,74 @@ p {
   font-size: clamp(0.75rem, 2vw, 2.5rem);
 }
 /* NAV STYLING */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 #navBar {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: antiquewhite;
-}
-#navLogo {
-  width: 10%;
-}
-#navName {
-  font-size: 200%;
+  position: relative;
+  padding: 16px 20px;
+  padding-bottom: 22px;
+  min-height: 50px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.4);
 }
 
+#navName {
+  font-size: clamp(1.25rem, 5vw, 4rem);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  line-height: 1;
+}
+
+.menu-toggle {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15px;
+  margin-left: auto;
+}
+.bar {
+  width: 25px;
+  height: 1px;
+  background-color: black;
+}
+#navLinks {
+  display: none;
+}
+#navLinks.open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  background-color: antiquewhite;
+  font-size: clamp(1rem, 2.5vw, 3rem);
+  padding: 1.5rem;
+  padding-left: 0.25rem;
+  padding-right: 3rem;
+  text-align: left;
+  z-index: 99;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 10px;
+}
+
+.navLink {
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: rgb(107, 106, 106);
+}
 /* HERO STYLING */
 #hero {
   display: flex;
@@ -57,12 +112,12 @@ p {
   width: 100%;
 }
 #heroTitle h1 {
-  font-size: clamp(1.25rem, 5vw, 5rem);
+  font-size: clamp(1.25rem, 5vw, 4rem);
 }
 #heroTitle h2 {
   display: flex;
   padding-top: 10%;
-  font-size: clamp(1.25rem, 5vw, 5rem);
+  font-size: clamp(1.25rem, 5vw, 4rem);
   justify-content: flex-end;
   padding-right: 2%;
 }
