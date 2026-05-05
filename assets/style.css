@@ -8,6 +8,11 @@
   margin: 0px;
   border: 0px;
   padding: 0px;
+  --primaryColor: #ffb6c1;
+  --secondaryColor: #7c0d0e;
+  --accentColor: #5ab8c9;
+  --brandBlack: #110e04;
+  --secondaryAccent: #c0c0c0;
 }
 body {
   font-family: "Abril Fatface";
@@ -34,7 +39,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
+  background-color: var(--primaryColor);
   position: relative;
   padding: 16px 20px;
   padding-bottom: 22px;
@@ -73,7 +78,7 @@ header {
   flex-direction: column;
   position: fixed;
   right: 0;
-  background-color: antiquewhite;
+  background-color: var(--primaryColor);
   font-size: clamp(1rem, 2.5vw, 3rem);
   padding: 1.5rem;
   padding-left: 0.25rem;
@@ -108,7 +113,7 @@ header {
 #heroTitle {
   top: 5%;
   padding-left: 2%;
-  color: antiquewhite;
+  color: var(--primaryColor);
   width: 100%;
 }
 #heroTitle h1 {
@@ -125,7 +130,7 @@ header {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  color: antiquewhite;
+  color: var(--primaryColor);
 }
 
 #heroButtons {
@@ -139,14 +144,14 @@ header {
   display: flex;
   background-color: transparent;
   margin: 0.2em;
-  color: antiquewhite;
-  border-color: antiquewhite;
+  color: var(--primaryColor);
+  border-color: var(--primaryColor);
   font-size: clamp(0.75rem, 2vw, 4rem);
   padding: clamp(0.4rem, 1vw, 0.8rem) clamp(0.8rem, 2vw, 1.5rem);
 }
 
 .herobtn:hover {
-  background-color: antiquewhite;
+  background-color: var(--primaryColor);
 }
 /* ABOUT STYLING */
 #aboutPage {
@@ -155,7 +160,7 @@ header {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: antiquewhite;
+  background-color: var(--primaryColor);
 }
 #abtBlurbOne {
   width: 65%;
@@ -191,14 +196,14 @@ header {
 }
 .cardBtn {
   color: black;
-  background-color: antiquewhite;
+  background-color: var(--primaryColor);
   border: 0;
   font-size: clamp(0.75rem, 2vw, 4rem);
   padding: clamp(0.4rem, 1vw, 0.8rem) clamp(0.8rem, 2vw, 1.5rem);
 }
 .cardBtn:hover {
   background-color: black;
-  color: antiquewhite;
+  color: var(--primaryColor);
 }
 /* HOW IT WORKS STYLING */
 #howItWorks {
@@ -208,7 +213,7 @@ header {
 /* FOOTER STYLING */
 #footer {
   display: flex;
-  background-color: antiquewhite;
+  background-color: var(--primaryColor);
   justify-content: center;
   align-items: center;
   height: 4.5rem;
